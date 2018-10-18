@@ -1,0 +1,115 @@
+package test
+
+import "collections"
+
+[public]
+class SomeClass {
+    (uint8, bool) InvokeableMember() {
+        return 0, true
+    }
+
+}
+
+
+// type annotations / union types
+type Int ( int8 | int16 | int32 | int64 )
+type UInt ( uint8 | uint16 | uint32 | uint64 )
+type Number ( Int | UInt )
+
+
+// type alias
+type IntAlias int 
+
+class ClassLifecycle {
+    // constructor
+    new(  ) { 
+
+    }
+
+    // destructor
+    ~class() {
+
+    }
+
+}
+
+class ControlFlow {
+
+    SomeMethod(item: IntAlias) {
+        //implicit void return type
+
+        switch ( item ) {
+            case 1:
+                break
+            case 2:
+                break
+            default:
+                break
+        }
+
+        if ( item != 1 ) 
+            return
+        else 
+            // do something else  
+    }
+}
+
+class Optionals {
+    Int? item // Int or Null
+    create(item: Int?) {
+        this.item = item
+    }
+}
+
+class ImplicitReturns {
+    create() {
+
+    }
+
+    (int8, bool) ShowImplicitReturns(isTrue: bool) {
+        if ( isTrue )
+            1, isTrue
+        else 
+            0, isTrue
+    }
+
+}
+
+class CollectionIntializers {
+    int[] integers = int[]{ 1, 2, 3, 4 }
+    Map<string, int> intNames = Map<string, int>{
+                { "one" : 1 },
+                { "two" : 2 },
+                { "three" : 3 }
+            }
+}
+
+class Values {
+    int myInt = 1
+    int anotherInt = 1_000 // 1000
+    int hex = 0xFFA // 
+    int bin = 0b011
+    int under = 0xFF_00_00 
+    int score = 0b0111_1111_1111
+
+    char c = 'h'
+    string s = "string"
+
+    bool boolean = true
+
+
+}
+
+// basic types
+bool boolean = true
+string s = "string"
+
+// int is a union type, int8,16,32,64 are primitives
+type int ( int8 | int16 | int32 | int64 )
+type uint ( uint8 | uint16 | uint32 | uint64 )
+
+// byte is an alias for uint8
+type byte uint8
+
+// rune is an alias for int32
+type rune int32
