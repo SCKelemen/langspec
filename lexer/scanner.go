@@ -32,6 +32,22 @@ func (s *Scanner) scanIdentifier() string {
 	return string(s.src[offset:s.position])
 }
 
+func (s *Scanner) next() {
+	if s.readPosition < len(s.src) {
+		s.position = s.readPosition
+		if s.ch == '\n' {
+			//
+		}
+	}
+}
+
+func (s *Scanner) peek() byte {
+	if s.readPosition < len(s.src) {
+		return s.src[s.readPosition]
+	}
+	return 0
+}
+
 func isLetter(ch byte) bool {
 	return 'a' <= ch && ch <= 'z' || 'A' <= ch && ch <= 'Z' || ch == '_' || ch >= utf8.RuneSelf && unicode.IsLetter(ch)
 }
