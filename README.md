@@ -85,7 +85,7 @@ type byte uint8  // byte type definition => uint8 alias => represents ascii code
 rune A = 0x41
 rune a = 97 
 
-type rune uint32 // rune type definition => uint32 alias => represents unicode codepoint
+type rune int32 // rune type definition => int32 alias => represents unicode codepoint
 ```
 
 ### Strings
