@@ -72,7 +72,7 @@ complex64  num = 6 + 7i
 complex128 num = 6 + 7i
 ```
 
-### byte
+### Byte
 ```Go
 byte A = 0x41    // hexadecimal number 
 byte a = 97      // decimal number
