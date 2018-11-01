@@ -193,6 +193,36 @@ ignore extra values:
 _, item = TryGetItem(id: "1")
 ```
 
+### Type Unions
+```Typescript
+type uint ( uint8 | uint16 | uint32 | uint64 )
+
+type int ( int8 | int16 | int32 | int64 )
+
+type byte uint8
+type rune int32
+```
+
+### Nullable Types
+```swift
+type NullableBool bool?
+type NullableBool ( bool | null )
+```
+
+### Generics 
+```C#
+public class Map<TKey, TValue> {
+
+    public TKey[] GetKeys() {
+       return new TKey[]{};
+    }
+
+    public TValue[] GetValues() {
+       return new TValue[]{}
+    }
+}
+```
+
 
 ### Example
 
