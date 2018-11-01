@@ -165,7 +165,35 @@ switch (condition) {
 
 ```
 
+### Functions
+```C#
+string GetEmptyString() {
+  return ""
+}
+```
 
+### Multi-Returns
+```Go
+(bool, item) TryGetItem(id: string) {
+  return true, item{id: id}
+}
+```
+Named returns:
+```Go
+(bool itemExists, item item) TryGetItem(id: string) {
+ itemExists = true
+ item = item{id: id}
+ return 
+}
+
+### Blank Identifier
+ignore extra values:
+```Go
+_, item = TryGetItem(id: "1")
+```
+
+
+### Example
 
 ```
 package main
