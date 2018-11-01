@@ -204,7 +204,7 @@ type rune int32
 ```
 
 ### Nullable Types
-```swift
+```Go
 type NullableBool bool?
 type NullableBool ( bool | null )
 ```
