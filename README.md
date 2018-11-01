@@ -42,7 +42,7 @@ SomeType instance = GetSomeType() // statically typed as SomeType
 ### Constants 
 ```Go
 const name = "someName"    // type-inferred
-const SomeType someName = "someName"    // explicitly-typed
+const string someName = "someName"    // explicitly-typed
 ```
 
 ### Booleans
