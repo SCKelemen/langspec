@@ -1,7 +1,30 @@
 # langspec
- A modern language.
+A family of languages: languages should feel familiar from baremetal to cloud.
  
  ## Motivation
+ 
+ 
+ ## Architecture
+ Languages:
+  - Ash
+  - Ember
+  - Blaze
+  
+ Tools:
+  - Pyro
+  
+  ### Ash
+  An abstraction over assembly. (asm)
+  
+  ### Ember
+  An embedded systems language. (c++)
+  
+  ### Blaze
+  A full systems language. (c#)
+  
+  ### Pyro
+  A unified build system.
+  
  
  ## Syntax
  
