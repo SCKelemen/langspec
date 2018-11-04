@@ -6,12 +6,12 @@ A family of languages: languages should feel familiar from baremetal to cloud.
  
  ## Architecture
  Languages:
-  - Ash
-  - Ember
-  - Blaze
+  - [Ash](https://github.com/sckelemen/ash)
+  - [Ember](https://github.com/sckelemen/ember)
+  - [Blaze](https://github.com/sckelemen/blaze)
   
  Tools:
-  - Pyro
+  - [Pyro](https://github.com/sckelemen/pyro)
   
   ### Ash
   An abstraction over assembly. (asm)
