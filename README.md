@@ -278,6 +278,11 @@ public OtherClass<T> where T : class
 }
 ```
 
+# Resources
+
+## Typesytems
+- [Dependent Types](https://en.wikipedia.org/wiki/Dependent_type)
+
 
 # Reference
 - [C#-lang](https://github.com/dotnet/csharplang)
