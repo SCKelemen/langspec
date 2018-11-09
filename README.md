@@ -246,7 +246,7 @@ public class Map<TKey, TValue> {
 }
 ```
 ### Collections
-```C# 
+```coffee
 let array = [1, 2, 3, 4] // arrays store homogeneous, static data. type can be inferred for value-types
 let collection = { 1, 2, 3, 4 } // collection are dynamic. type is inferred
 let typedCollection = SomeClass[]{ {}, {}, {} }
