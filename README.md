@@ -255,6 +255,27 @@ let associateArray = Hash<TKey, TVal>{ {}:{}, {}:{}, {}:{} }
 let demoAsscArr = Hash<string, int>{ "one":1, "two":2, "three":3 }
 ```
 
+### Composition 
+I'm not really sure how this will work with multiple returns.
+Haskell has an idea of function composition using the . (dot) operator. F# has a pipe-forward operator (|>). Rust has pipelines (->). I think it would be interesting to consider what could happen with iterators where the pipeline yields to the next operation immediately instead of waiting for the first composed operation to complete, but I think that would have some ramifications with concurrency.
+
+```F#
+let F x y z = x (y z)
+let F x y z = y z |> x    // using forward pipe
+let F x y z = x <| y z    // using backward pipe
+```
+
+Proposed: 
+```F#
+[1..100] 
+|> Seq.map (function
+    | x when x%5=0 && x%3=0 -> "FizzBuzz"
+    | x when x%3=0 -> "Fizz"
+    | x when x%5=0 -> "Buzz"
+    | x -> string x)
+|> Seq.iter (printfn "%s")
+```
+This uses value-matching, though.
 
 ### Example
 
@@ -288,6 +309,10 @@ public OtherClass<T> where T : class
 ```
 
 # Theory 
+
+## Function Composition and Associativity
+- [F#](https://fsharpforfunandprofit.com/posts/function-composition/)
+- [Rust](https://docs.rs/pipelines/0.4.0/pipelines/)
 
 ## Collections
 - Set Thoery
