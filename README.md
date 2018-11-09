@@ -247,8 +247,10 @@ public class Map<TKey, TValue> {
 ```
 ### Collections
 ```C# 
-let collection = [1, 2, 3, 4] // arrays store homogeneous data, type can be inferred for value-types
-let collection = SomeClass[]{ {}, {}, {}, {} }
+let array = [1, 2, 3, 4] // arrays store homogeneous, static data. type can be inferred for value-types
+let collection = { 1, 2, 3, 4 } // collection are dynamic. type is inferred
+let typedCollection = SomeClass[]{ {}, {}, {} }
+let demoTypedCollec = string[]{ "one", "two", "three" }
 let associateArray = Hash<TKey, TVal>{ {}:{}, {}:{}, {}:{} }
 let demoAsscArr = Hash<string, int>{ "one":1, "two":2, "three":3 }
 ```
