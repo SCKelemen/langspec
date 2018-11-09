@@ -282,7 +282,8 @@ public OtherClass<T> where T : class
 
 ## Typesytems
 - [Dependent Types](https://en.wikipedia.org/wiki/Dependent_type)
-
+- [Pure Type Systems](https://en.wikipedia.org/wiki/Pure_type_system)
+- [Typed Lambda Calculus](https://en.wikipedia.org/wiki/Typed_lambda_calculus)
 
 # Reference
 - [C#-lang](https://github.com/dotnet/csharplang)
