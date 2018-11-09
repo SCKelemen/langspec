@@ -14,13 +14,13 @@ A family of languages: languages should feel familiar from baremetal to cloud.
   - [Pyro](https://github.com/sckelemen/pyro)
   
   ### Ash
-  An abstraction over assembly. (asm)
+  An abstraction over assembly. (asm) No runtime, simple features like functions and inlining. Bit-aware.
   
   ### Ember
-  An embedded systems language. (c++)
+  An embedded systems language. (c++) Doesn't include garbage collection, and has a smaller runtime.
   
   ### Blaze
-  A full systems language. (c#)
+  A full systems language. (c#) Full language amd runtime. Tricolor collector. 
   
   ### Pyro
   A unified build system.
