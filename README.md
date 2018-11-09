@@ -277,6 +277,47 @@ Proposed:
 ```
 This uses value-matching, though.
 
+```Go
+// iterable vs enumberable
+//func Sum( collection: Iterable<int> ) {
+// var sum = 0
+// yield sum += value
+//} 
+
+//func Count( collection: Iterable<int> ) {
+//  var count = 0
+//  yield count++
+//}
+
+//func Average = 
+//  |> collection: Iterable<int>
+//  |> Sum(collection)
+//  |> Su
+ 
+ 
+ func Square(value: int) {
+    return value * value
+    // == return value ** 2
+ }
+ 
+ func Triple(value: int) {
+   return value * 3
+ }
+ 
+ // works for iterators
+ // I guess pipelining single value functions over a iterable is equivelent to a map
+ func TripleSquare = 
+ |> collection: Iterable<int>
+ |> Square(collection.Iterate())
+ |> Triple(^) // get value from previous step
+ |> yield ^ // return iterator of previous value
+ 
+ 
+ 
+```
+
+``` 
+
 ### Example
 
 ```
