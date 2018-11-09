@@ -245,6 +245,13 @@ public class Map<TKey, TValue> {
     }
 }
 ```
+### Collections
+```C# 
+let collection = [1, 2, 3, 4] // arrays store homogeneous data, type can be inferred for value-types
+let collection = SomeClass[]{ {}, {}, {}, {} }
+let associateArray = Hash<TKey, TVal>{ {}:{}, {}:{}, {}:{} }
+let demoAsscArr = Hash<string, int>{ "one":1, "two":2, "three":3 }
+```
 
 
 ### Example
@@ -278,13 +285,26 @@ public OtherClass<T> where T : class
 }
 ```
 
+# Theory 
+
+## Collections
+- Set Thoery
+
+## Graphs
+- Graph Theory
+
 # Resources
+
+## Collections
+
+## Grammar / Syntax
 
 ## Typesytems
 - [Dependent Types](https://en.wikipedia.org/wiki/Dependent_type)
 - [Pure Type Systems](https://en.wikipedia.org/wiki/Pure_type_system)
 - [Typed Lambda Calculus](https://en.wikipedia.org/wiki/Typed_lambda_calculus)
 - [Intuitionistic Logic](https://en.wikipedia.org/wiki/Intuitionistic_logic)
+- [Simply Typed Lambda Calculus](https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus)
 
 # Reference
 - [C#-lang](https://github.com/dotnet/csharplang)
