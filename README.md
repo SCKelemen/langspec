@@ -316,8 +316,6 @@ This uses value-matching, though.
  
 ```
 
-``` 
-
 ### Example
 
 ```
