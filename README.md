@@ -25,6 +25,8 @@ A family of languages: languages should feel familiar from baremetal to cloud.
   ### Pyro
   A unified build system.
   
+  ### Gasoline
+  A powerful, roslyn-like compiler-sdk.
  
  ## Syntax
  
