@@ -374,6 +374,9 @@ public OtherClass<T> where T : class
 - [Intuitionistic Logic](https://en.wikipedia.org/wiki/Intuitionistic_logic)
 - [Simply Typed Lambda Calculus](https://en.wikipedia.org/wiki/Simply_typed_lambda_calculus)
 
+## Code Generation
+- [GO ASM](https://golang.org/doc/asm)
+
 # Reference
 - [C#-lang](https://github.com/dotnet/csharplang)
 - [Go-lang](https://github.com/golang/go)
