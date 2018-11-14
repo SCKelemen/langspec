@@ -336,7 +336,23 @@ func (instance *SomeClass) +(operand: *SomeClass) *SomeClass {
      return this
 }
 ```
+Operator Overloading => Function Aliases
+```Go
+receiver + operand
 
+// defining a the add operator
+func (receiver *Complex) +(operand: *Complex) *Complex {
+    receiver.Real += operand.Real
+    receiver.Imaginary += operand.Imaginary
+    return receiver
+}
+
+// overloading
+func (receiver *Complex) +(operand: *int) *Complex {
+    receiver.Real += operand
+    return receiver
+}
+```
 
 ### Example
 
