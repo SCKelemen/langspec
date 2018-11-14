@@ -1,4 +1,4 @@
-# langspec
+# langspec 🔥
 A family of languages: languages should feel familiar from baremetal to cloud.
  
  ## Motivation
@@ -13,19 +13,19 @@ A family of languages: languages should feel familiar from baremetal to cloud.
  Tools:
   - [Pyro](https://github.com/sckelemen/pyro)
   
-  ### Ash
+  ### Ash 🔥
   An abstraction over assembly. (asm) No runtime, simple features like functions and inlining. Bit-aware.
   
-  ### Ember
+  ### Ember 🔥
   An embedded systems language. (c++) Doesn't include garbage collection, and has a smaller runtime.
   
-  ### Blaze
+  ### Blaze 🔥
   A full systems language. (c#) Full language amd runtime. Tricolor collector. 
   
-  ### Pyro
+  ### Pyro 🔥
   A unified build system.
   
-  ### Gasoline
+  ### Gasoline 🔥
   A powerful, roslyn-like compiler-sdk.
  
  ## Syntax
