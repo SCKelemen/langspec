@@ -376,6 +376,7 @@ public OtherClass<T> where T : class
 
 ## Code Generation
 - [GO ASM](https://golang.org/doc/asm)
+- [SIMD](https://en.wikipedia.org/wiki/SIMD)
 
 # Reference
 - [C#-lang](https://github.com/dotnet/csharplang)
