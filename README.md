@@ -147,7 +147,7 @@ let not = !expression
 let and = a & b
 let or  = a | b
 let xor = a ^ b
-let not = ~a
+let not = ~a     // bitwise complement
 
 let lshift = a << b
 let rshift = a >> b
