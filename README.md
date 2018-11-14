@@ -312,11 +312,25 @@ This uses value-matching, though.
  |> collection: Iterable<int>
  |> Square(collection.Iterate())
  |> Triple(^) // get value from previous step
- |> yield ^ // return iterator of previous value
- 
- 
- 
+ |> yield ^ // return iterator of previous value 
+
 ```
+### Function Binding, Extension Methods, and Operator Overloading
+
+```Go
+// extension method
+func (instance *ExtendedClass) ExtensionMethod(factor: int) int {
+    return instance.Value * factor
+}
+
+// overloaded operator
+func (instance *SomeClass) +(operand: *SomeClass) *SomeClass {
+     instance.Real += operand.Real
+     instance.Imaginary += operand.Imaginary
+     return this
+}
+```
+
 
 ### Example
 
