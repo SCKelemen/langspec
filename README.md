@@ -98,7 +98,7 @@ complex128 num = 6 + 7i
 ```
 
 Literals ignore underscores/lodashes:
-```
+```C#
 int num = 1_234_567
 int num = 0b0110_1101_1100_0001
 ```
