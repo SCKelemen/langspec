@@ -264,7 +264,7 @@ let demoAsscArr = Hash<string, int>{ "one":1, "two":2, "three":3 }
 ```
 slices:
 ```Coffee
-let subset = set[hi:lo]
+let subset = set[lo:hi]
 let subset = set[1:4] // => 1, 2, 3
 let subset = set[:4]  // => 0, 1, 2, 3
 let subset = set[4:]  // => 4, 5, 6
