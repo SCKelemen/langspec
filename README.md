@@ -262,6 +262,17 @@ let demoTypedCollec = string[]{ "one", "two", "three" }
 let associateArray = Hash<TKey, TVal>{ {}:{}, {}:{}, {}:{} }
 let demoAsscArr = Hash<string, int>{ "one":1, "two":2, "three":3 }
 ```
+slices:
+```Coffee
+let subset = set[hi:lo]
+let subset = set[1:4] // => 1, 2, 3
+let subset = set[:4]  // => 0, 1, 2, 3
+let subset = set[4:]  // => 4, 5, 6
+```
+destructuring:
+```
+
+```
 
 ### Composition 
 I'm not really sure how this will work with multiple returns.
